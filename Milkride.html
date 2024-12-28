@@ -1,0 +1,1136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MilkRide</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            text-decoration: none;
+            list-style: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: "Poppins", serif;
+        }
+
+        /* header css starts */
+        header {
+            width: 100%;
+            height: 80px;
+            
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            background-color: white;
+            position: fixed;
+            z-index: 1;
+            
+        }
+
+        .logo {
+            width: 170px;
+            height: 40px;
+            
+
+        }
+
+        .logo img {
+            width: 100%;
+            height: 100%;
+        }
+
+        header nav ul {
+            display: flex;
+            gap: 50px;
+        }
+
+        header nav ul li a {
+            color: black;
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        header button {
+            border: none;
+            color: white;
+            background-color: black;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+        div .btn button:hover{
+            transform: translateY(-3px);
+        }
+        /* header css ends */
+
+        /* section 1 css starts  */
+        .section1 {
+            width: 100%;
+            height: 800px;
+            
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 30px;
+            background-color: lightcyan;
+            text-align: center;
+        }
+
+        .h1 {
+            font-size: 25px;
+        }
+
+        .p {
+            font-size: 20px;
+        }
+
+        .imgfont {
+            display: flex;
+            gap: 30px;
+            font-size: 20px;
+        }
+
+        .imgfont1 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .icon {
+            width: 25px;
+            height: 25px;
+            background-color: skyblue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section1 button {
+            border: none;
+            color: white;
+            background-color: black;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* section 1 css ends  */
+
+        /* section 2 css starts */
+        .section2 {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .box1 {
+            border-radius: 10px;
+            width: 370px;
+            height: 370px;
+            border: 1px dashed black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: #e3f7fe;
+            
+        }
+
+        .clock,
+        .call {
+            display: flex;
+            gap: 10px;
+        }
+
+        .se1 {
+            font-size: 16px;
+        }
+
+        .se2 {
+            color: #74C0FC;
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .h2 {
+            padding-left: 30px;
+        }
+
+        .s1,
+        .s2,
+        .s3 {
+            display: flex;
+            margin: 20px 0px;
+            flex-direction: column;
+            padding-left: 25px;
+            
+        }
+
+        .section2 button {
+            border: none;
+            color: white;
+            background-color: black;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        /* section 2 css ends  */
+
+        /* section 3 css starts */
+        .a1 p span {
+            color: #74C0FC;
+        }
+
+        .suba1,
+        .suba2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .b1,
+        .b2,
+        .b3,
+        .b4 {
+            display: flex;
+            margin: 5px;
+            gap: 10px;
+            width: auto;
+            height: 40px;
+            border-radius: 10px;
+            background-color: skyblue;
+            justify-content: center;
+        }
+
+        .section3 {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+
+        }
+
+        .sec1,
+        .sec2 {
+            width: 600px;
+            height: 400px;
+         
+        }
+
+        .sec2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .a1 {
+            font-size: 35px;
+            font-weight: 700;
+            width: 570px;
+            height: 100px;
+            margin: 20px;
+
+        }
+
+        .a2 {
+            width: 570px;
+            height: 120px;
+            font-size: 17px;
+            margin: 20px;
+            font-weight: 400;
+        }
+
+        .a3 {
+            margin: 20px;
+            font-size: 17px;
+            width: 570px;
+            height: 100px;
+        }
+
+        /* section 3 css ends  */
+
+        .small {
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 17px;
+            text-align: center;
+           
+        }
+
+        .small p {
+            font-size: 33px;
+            font-weight: 600;
+        }
+
+        .s {
+            color: #74C0FC;
+            margin: 0px 8px;
+        }
+
+        .meee1,
+        .meee2,
+        .meee3,
+        .meee4,
+        .meee5,
+        .meee6 {
+            display: flex;
+            gap: 10px;
+        }
+
+        .mee1,
+        .mee3 {
+            display: flex;
+            gap: 150px;
+        }
+
+        .mee2 {
+            display: flex;
+            gap: 90px;
+        }
+
+        .me1 h1 span {
+            color: #74C0FC;
+        }
+
+        .m1 button {
+            border: none;
+            color: white;
+            background-color: black;
+            width: 150px;
+            height: 50px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .m1,
+        .m2 {
+            width: 600px;
+            height: 400px;
+        }
+
+        .m2 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .merchant {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+
+        .m1 {
+            display: flex;
+            gap: 30px;
+            flex-direction: column;
+        }
+
+        .me3 {
+            display: flex;
+            gap: 20px;
+            flex-direction: column;
+        }
+
+        .me1 {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .cee2,
+        .cee3 {
+            gap: 160px;
+            display: flex;
+        }
+
+        .cee1 {
+            display: flex;
+            gap: 82px;
+        }
+
+        .cee3 {
+            display: flex;
+            gap: 180px;
+        }
+
+        .dee1 {
+            display: flex;
+            gap: 100px;
+        }
+
+        .sect3 {
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .subsect1,
+        .subsect2 {
+            display: flex;
+            gap: 35px;
+        }
+
+        .section4 button {
+            border: none;
+            color: white;
+            background-color: black;
+            padding: 20px 30px;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 500;
+            cursor: pointer;
+        }
+
+        .section4 {
+            width: 100%;
+            height: 800px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            gap: 25px;
+            background-color: #e3f7fe;
+        }
+
+        .eesect1 {
+            width: 380px;
+            height: 200px;
+            background-color: #f7fcff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: center;
+            border-radius: 10px;
+        }
+
+        .eeesect1 {
+            width: 40px;
+            height: 40px;
+        }
+
+        .eeesect1 img {
+            width: 100%;
+            height: 100%;
+        }
+
+        .boxx2 {
+            width: 70px;
+            height: 70px;
+            border: 3px solid skyblue;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+        }
+
+        .boxx1 {
+            width: 100px;
+            height: 100px;
+            border: 4px solid skyblue;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .sect1 p span {
+            color: #74C0FC;
+        }
+
+        .sect1 p {
+            font-size: 40px;
+            font-weight: 600;
+        }
+
+        .ff1,
+        .ff2,
+        .ff3,
+        .ff4,
+        .ff5,
+        .ff6 {
+            height: 70px;
+            display: flex;
+            gap: 10px;
+            padding-left: 30px;
+            }
+
+        .ff1 p,
+        .ff2 p,
+        .ff3 p,
+        .ff4 p,
+        .ff5 p,
+        .ff6 p {
+            font-size: 18px;
+            font-weight: bold;
+            
+        }
+
+        .f1 p {
+            font-size: 35px;
+            font-weight: 600;
+            color: #04afff;
+        }
+
+        .frequent {
+            width: 100%;
+            height: 600px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            justify-content: center;
+            gap: 50px;
+        }
+
+        .boxxx {
+            width: 30px;
+            height: 30px;
+            border: 1px solid black;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form{
+            display: block;
+            align-items: space-evenly;
+            w200px
+
+        }
+
+        footer {
+            width: 100%;
+            height: 320px;
+            display: flex;
+            justify-content: space-evenly;
+            background-color: lightblue;
+            padding: 50px;
+        }
+
+        .ffo1 img {
+            width: 170px;
+            height: 40px;
+        }
+
+        .fo1 {
+            width: 350px;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .fo2,
+        .fo3 {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        footer .fo3 nav {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        footer .fo2 nav {
+            display: flex;
+            flex-direction: column;
+            gap: 7px;
+        }
+
+        .footer1{
+            background-color: lightblue;
+            display: flex;
+            padding: 40px;
+        }
+
+        .f11{
+            display: flex;
+            gap: 1000px;
+            }
+
+        .f111{
+            display: flex;
+            gap: 30px;
+        }
+        .f112{
+            display: flex;
+            gap: 20px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <!-- header starts  -->
+    <header>
+
+        <div class="logo"><img src="https://milkride.com/wp-content/uploads/2024/04/MilkRide-logo.png" alt=""></div>
+
+        <nav>
+            <ul>
+
+                <li><a href="">Why Milkride?</a></li>
+                <li><a href="">Features</a></li>
+                <li><a href="">Blogs</a></li>
+            </ul>
+        </nav>
+
+       <div class="btn"> <button>Request Demo</button></div>
+
+    </header>
+
+    <!-- header ends  -->
+
+    <!-- section1 starts  -->
+    <div class="section1">
+
+        <div class="h1">
+            <h1>Upgrade Your Dairy Business with Our <br> Advanced Milk Delivery Software </h1>
+        </div>
+
+        <div class="p">
+            <p>Streamline the dairy business and maximize milk delivery with our cutting-edge milk delivery software.
+                With <br> Milkride, efficiently manage your orders, optimize routes, and schedule deliveries for a
+                seamless customer <br> experience.
+            </p>
+        </div>
+
+        <div class="imgfont">
+
+            <div class="imgfont1">
+                <div class="icon"><i class="fa-solid fa-check"></i></div>
+                <p>Streamline Operational Efficiency</p>
+            </div>
+
+            <div class="imgfont1">
+                <div class="icon"><i class="fa-solid fa-check"></i></div>
+                <p>Improved Customer Experience</p>
+            </div>
+
+            <div class="imgfont1">
+                <div class="icon"><i class="fa-solid fa-check"></i></div>
+                <p>Amplify Business Performance</p>
+            </div>
+
+        </div>
+
+        <div class="btn2"><button>Get a Demo - It's Free</button></div>
+    </div>
+    <hr>
+    <!-- section1 ends  -->
+
+    <!-- section2 starts -->
+    <div class="section2">
+
+        <div class="box">
+
+            <div class="box1">
+
+                <div class="s1">
+                    <div class="se1">An average</div>
+                    <div class="se2">Retailor</div>
+                </div>
+
+                <div class="s2">
+                    <div class="clock">
+                        <div class="icon1"><i class="fa-regular fa-clock" style="color: #74C0FC;"></i></div>
+                        <p style="font-weight: bold;">410 Hours</p>
+                    </div>
+                    <p class="h2">Invests around 410 hours annually in manual accounting and report generation tasks.
+                    </p>
+                </div>
+
+                <div class="s3">
+                    <div class="call">
+                        <div class="icon2"><i class="fa-solid fa-phone-flip" style="color: #74C0FC;"></i></div>
+                        <p style="font-weight: bold;">17-20 Calls</p>
+                    </div>
+                    <p class="h2">Contacts the Manager and Delivery team around 17-20 times daily for delivery updates.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="box1">
+
+                <div class="s1">
+                    <div class="se1">An average</div>
+                    <div class="se2">Delivery Boy</div>
+                </div>
+
+                <div class="s2">
+                    <div class="clock">
+                        <div class="icon1"><i class="fa-regular fa-clock" style="color: #74C0FC;"></i></div>
+                        <p style="font-weight: bold;">160 Hours</p>
+                    </div>
+                    <p class="h2">Invests around 160 hours per year in manually entries in the delivery notebook.</p>
+                </div>
+
+                <div class="s3">
+                    <div class="call">
+                        <div class="icon2"><i class="fa-solid fa-phone-flip" style="color: #74C0FC;"></i></div>
+                        <p style="font-weight: bold;">10-12 Calls</p>
+                    </div>
+                    <p class="h2">Makes 10-12 calls daily to confirm addresses and check on order status updates.</p>
+                </div>
+
+            </div>
+
+            <div class="box1">
+
+                <div class="s1">
+                    <div class="se1">An average</div>
+                    <div class="se2">Customer</div>
+                </div>
+
+                <div class="s2">
+                    <div class="clock">
+                        <div class="icon1"><i class="fa-regular fa-clock" style="color: #74C0FC;"></i></div>
+                        <p style="font-weight: bold;">30 minutes</p>
+                    </div>
+                    <p class="h2">Invests 30 min and does not order again when delivery is delayed or ordered items
+                        mismatch.</p>
+                </div>
+
+                <div class="s3">
+                    <div class="call">
+                        <div class="icon2"><i class="fa-solid fa-phone-flip" style="color: #74C0FC;"></i></div>
+                        <p style="font-weight: bold;">2 Calls</p>
+                    </div>
+                    <p class="h2">Reaches out 2 times per order for <br> order delivery status and directing <br> the
+                        driver into
+                        hurry.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+        <button>Automate Milk Deliery Process </button>
+
+    </div>
+    <hr>
+    <!-- section2 ends  -->
+
+    <!-- section 3 starts  -->
+    <div class="section3">
+
+        <div class="sec1">
+            <div class="a1">
+                <p>Effortlessly Manage Your <span> Milk <br> Delivery Business </span> with Our App</p>
+            </div>
+            <div class="a2">For your milk delivery business, choose from daily, alternate-day, <br> or weekly milk
+                subscriptions to suit your lifestyle
+                perfectly. Our milk <br> delivery software also offers a convenient vacation mode, allowing <br> you to
+                pause deliveries whenever
+                needed.</div>
+            <div class="a3">
+                <div class="suba1">
+                    <div class="b1">
+                        <div class="icon3"><i class="fa-solid fa-check"></i></div> Customizable Delivery Schedule
+                    </div>
+                    <div class="b2">
+                        <div class="icon3"><i class="fa-solid fa-check"></i></div> Vacation Mode
+                    </div>
+                </div>
+                <div class="suba2">
+                    <div class="b3">
+                        <div class="icon3"><i class="fa-solid fa-check"></i></div> Pause & Resume Subscriptions
+                    </div>
+                    <div class="b4">
+                        <div class="icon3"><i class="fa-solid fa-check"></i></div> Secure Online Payment
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="sec2"><img src="https://milkride.com/wp-content/uploads/2024/04/subscription4.png" alt=""></div>
+
+    </div>
+    <!-- <hr> -->
+    <!-- section 3 ends  -->
+
+    <div class="small">
+        <p>How Our <span class="s">Milk Delivery Solution </span> Simplifies <span class="s">Dairy Process</span> </p>
+        <span>Upgrade your milk delivery business by transforming traditional operations into a streamlined,
+            customer-focused <br> model.
+            Our expertly crafted on-demand milk delivery solution revolutionizes how you distribute and manage milk,
+            <br> putting the
+            customer experience first.</span>
+    </div>
+    
+
+    <!-- <hr> -->
+
+    <div class="merchant">
+        <div class="m1">
+            <div class="me1">
+                <h1><span>Merchant </span> Dashboard</h1>
+            </div>
+            <div class="me2">Efficiently handle orders, optimize routes, inventory control, and <br> insights through
+                our
+                intuitive user-friendly merchant
+                dashboard.</div>
+            <div class="me3">
+                <div class="mee1">
+                    <div class="meee1"><i class="fa-solid fa-check"></i>
+                        <p>Order Management</p>
+                    </div>
+                    <div class="meee2"><i class="fa-solid fa-check"></i>
+                        <p>Inventory Management</p>
+                    </div>
+                </div>
+                <div class="mee2">
+                    <div class="meee3"><i class="fa-solid fa-check"></i>
+                        <p>Delivery Area Management</p>
+                    </div>
+                    <div class="meee4"><i class="fa-solid fa-check"></i>
+                        <p>Route Map Planning</p>
+                    </div>
+                </div>
+                <div class="mee3">
+                    <div class="meee5"><i class="fa-solid fa-check"></i>
+                        <p>Billing Management</p>
+                    </div>
+                    <div class="meee6"><i class="fa-solid fa-check"></i>
+                        <p>Sales Reports & Analytics</p>
+                    </div>
+                </div>
+            </div>
+            <button>Get a Demo</button>
+        </div>
+        <div class="m2"><img src="Screenshot 2024-12-28 155032.jpg" alt=""></div>
+    </div>
+
+    <hr>
+
+    <div class="merchant">
+        <div class="m1">
+            <div class="me1">
+                <h1><span>Customer </span> Application</h1>
+            </div>
+            <div class="me2">Order fresh milk online and customize your deliveries with our <br> convenient milk
+                delivery
+                customer application.
+
+            </div>
+            <div class="me3">
+                <div class="cee1">
+                    <div class="meee1"><i class="fa-solid fa-check"></i>
+                        <p>Subscription Management</p>
+                    </div>
+                    <div class="meee2"><i class="fa-solid fa-check"></i>
+                        <p>Track Orders</p>
+                    </div>
+                </div>
+                <div class="cee2">
+                    <div class="meee3"><i class="fa-solid fa-check"></i>
+                        <p>Online Payments</p>
+                    </div>
+                    <div class="meee4"><i class="fa-solid fa-check"></i>
+                        <p>Delivery Instructions</p>
+                    </div>
+                </div>
+                <div class="cee3">
+                    <div class="meee5"><i class="fa-solid fa-check"></i>
+                        <p>Refer and Earn</p>
+                    </div>
+                    <div class="meee6"><i class="fa-solid fa-check"></i>
+                        <p>WhatsApp & SMS Notifications</p>
+                    </div>
+                </div>
+            </div>
+            <button>Get a Demo</button>
+        </div>
+        <div class="m2"><img src="assets/asset 3.png" alt=""></div>
+    </div>
+    <hr>
+
+    <div class="merchant">
+        <div class="m1">
+            <div class="me1">
+                <h1><span>Driver </span> Application</h1>
+            </div>
+            <div class="me2">Navigate routes, track orders, and ensure efficient milk deliveries with our user-friendly
+                driver application.</div>
+            <div class="me3">
+                <div class="dee1">
+                    <div class="meee1"><i class="fa-solid fa-check"></i>
+                        <p>Electronic Proof of Delivery</p>
+                    </div>
+                    <div class="meee2"><i class="fa-solid fa-check"></i>
+                        <p>Modify Orders</p>
+                    </div>
+                </div>
+                <div class="cee2">
+                    <div class="meee3"><i class="fa-solid fa-check"></i>
+                        <p>Track Order Details</p>
+                    </div>
+                    <div class="meee4"><i class="fa-solid fa-check"></i>
+                        <p>Record Cash Collection</p>
+                    </div>
+                </div>
+                <div class="cee3">
+                    <div class="meee5"><i class="fa-solid fa-check"></i>
+                        <p>Reverse Logistics</p>
+                    </div>
+                    <div class="meee6"><i class="fa-solid fa-check"></i>
+                        <p>GPS Navigation</p>
+                    </div>
+                </div>
+            </div>
+            <button>Get a Demo</button>
+        </div>
+        <div class="m2"><img src="assets/asset 4.png" alt=""></div>
+    </div>
+
+    <div class="section4">
+        <div class="sect1">
+            <p>Benefits of Our <span>Milk Delivery App</span></p>
+        </div>
+        <div class="sect2"><span>Boost productivity with automated order management, optimize delivery routes for fuel
+                efficiency, and track deliveries <br> in real-time. Elevate customer satisfaction through our
+                user-friendly mobile app for milk delivery.
+            </span></div>
+        <div class="sect3">
+            <div class="subsect1">
+                <div class="eesect1">
+                    <div class="boxx1">
+                        <div class="boxx2">
+
+                            <div class="eeesect1"><img src="assets/asset 5.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="eeesect2">
+                        <p style="font-size: 17px; font-weight: 500;">Cost Reduction</p>
+                    </div>
+                </div>
+                <div class="eesect1">
+                    <div class="boxx1">
+                        <div class="boxx2">
+
+                            <div class="eeesect1"><img src="assets/asset 6.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="eeesect2">
+                        <p style="font-size: 17px; font-weight: 500;">Regular and Free updates</p>
+                    </div>
+                </div>
+                <div class="eesect1">
+                    <div class="boxx1">
+                        <div class="boxx2">
+
+                            <div class="eeesect1"><img src="assets/asset 7.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="eeesect2">
+                        <p style="font-size: 17px; font-weight: 500;">Customer Retention</p>
+                    </div>
+                </div>
+
+
+            </div>
+            <div class="subsect2">
+                <div class="eesect1">
+                    <div class="boxx1">
+                        <div class="boxx2">
+
+                            <div class="eeesect1"><img src="assets/asset 8.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="eeesect2">
+                        <p style="font-size: 17px; font-weight: 500;">Faster Go-To-Market</p>
+                    </div>
+                </div>
+                <div class="eesect1">
+                    <div class="boxx1">
+                        <div class="boxx2">
+
+                            <div class="eeesect1"><img src="assets/asset 9.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="eeesect2">
+                        <p style="font-size: 17px; font-weight: 500;">Optional Efficiency</p>
+                    </div>
+                </div>
+                <div class="eesect1">
+                    <div class="boxx1">
+                        <div class="boxx2">
+
+                            <div class="eeesect1"><img src="assets/asset 10.png" alt=""></div>
+                        </div>
+                    </div>
+                    <div class="eeesect2">
+                        <p style="font-size: 17px; font-weight: 500;">Data Driven Decisions</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button>View More</button>
+    </div>
+
+    <div class="frequent">
+        <div class="f1">
+            <p>Frequently Asked Questions</p>
+        </div>
+        <div class="f2">
+            <div class="ff1">
+                <div class="boxxx"><i class="fa-solid fa-arrow-down"></i></div>
+                <p>What is milkride?</p>
+            </div>
+            <div class="ff2">
+                <div class="boxxx"><i class="fa-solid fa-arrow-down"></i></div>
+                <p>What is dairy management software?</p>
+            </div>
+            <div class="ff3">
+                <div class="boxxx"><i class="fa-solid fa-arrow-down"></i></div>
+                <p>What convenience does a Milk Delivery App offer to Customers?</p>
+            </div>
+            <div class="ff4">
+                <div class="boxxx"><i class="fa-solid fa-arrow-down"></i></div>
+                <p>Why is Milk Delivery Software becoming a necessity for doing Business?</p>
+            </div>
+            <div class="ff5">
+                <div class="boxxx"><i class="fa-solid fa-arrow-down"></i></div>
+                <p>What are the Advantages of Implementing Last-Mile Dairy Business?</p>
+            </div>
+            <div class="ff6">
+                <div class="boxxx"><i class="fa-solid fa-arrow-down"></i></div>
+                <p>How can Route Optimization Software improve efficiency for Delivery Operations?</p>
+            </div>
+        </div>
+    </div>
+
+     <div class="contact">
+        <div class="c1">
+            <p><span>Contact</span>Us</p>
+        </div>
+        <div class="c2">
+            <p>Connecting Your Dairy Dots - Our Milk Delivery Software Team is Here to Assist You Every Step of the Way
+            </p>
+        </div>
+        <div class="c3">
+            <div class="cc1"><img src="assets/asset 14.svg" alt=""></div>
+            <div class="cc2">
+                <form>
+                    <div>
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                        <label for="email">Email</label>
+                        <input type="email" id="email">
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="tel" placeholder="+91" id="phone">
+                    </div>
+                    <div>
+                        <label for="Company">Company Name</label>
+                        <input type="text" id="Company">
+                        <label for="number">Number of Customers </label>
+                        <input type="number" id="number">
+                        <label for="">City</label>
+                        <input type="text" name="" id="">
+                    </div>
+                    <div>
+                        <label for="address">Address</label>
+                        <textarea name="" id="address"></textarea>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div> 
+
+    <footer>
+        <div class="fo1">
+            <div class="ffo1"><img src="https://milkride.com/wp-content/uploads/2024/04/MilkRide-logo.png" alt=""></div>
+            <div class="ffo2">
+                <p>A SaaS based milk delivery software designed to streamline and automate milk delivery operations for
+                    dairy businesses.</p>
+            </div>
+        </div>
+
+        <div class="fo2">
+            <div class="ffo3">
+                <p style="font-weight: bold;">Quick Links</p>
+            </div>
+            <nav>
+                <li>About Us</li>
+                <li>Why Milkride?</li>
+                <li>Features</li>
+                <li>Blogs</li>
+                <li>FAQs</li>
+                <li>Contact Us</li>
+            </nav>
+        </div>
+
+        <div class="fo3">
+
+            <div class="ffo4">
+                <p style="font-weight: bold;">Contact</p>
+            </div>
+            <nav>
+                <li><i class="fa-regular fa-envelope"></i> hello@milkride.com</li>
+                <li><i class="fa-solid fa-phone-flip"></i> +91-999-855-9055</li>
+                <li><i class="fa-solid fa-phone-flip"></i> +91-957-484-6188</li>
+            </nav>
+        </div>
+
+    </footer>
+    <hr>
+
+    <div class="footer1">
+        <div class="f11">
+            <div class="f111">
+                <div class="f01">Terms of Service</div>
+                <div class="f02">Privacy policy</div>
+            </div>
+            <div class="f112">
+                <a href="https://www.facebook.com/milkrideapp/" ><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/milkrideapp/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/milkride/"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
